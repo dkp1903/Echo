@@ -1,4 +1,7 @@
 package com.appdev.dkp.echo.adapters
+import android.content.Context
+import android.os.Bundle
+import android.support.v4.app.FragmentActivity
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -37,6 +40,7 @@ class FavoriteAdapter(_songDetails: ArrayList<Songs>, _context: Context): Recycl
         })
 
     }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemView = LayoutInflater.from(mContext).inflate(R.layout.row_custom_mainscreen_adapter, parent, false)
         return MyViewHolder(itemView)
@@ -44,10 +48,9 @@ class FavoriteAdapter(_songDetails: ArrayList<Songs>, _context: Context): Recycl
     }
 
     override fun getItemCount(): Int {
-        return if(songDetails == null){
+        return if (songDetails == null) {
             0
-        }
-        else{
+        } else {
             return (songDetails as ArrayList<Songs>).size
 
         }
@@ -65,3 +68,4 @@ class FavoriteAdapter(_songDetails: ArrayList<Songs>, _context: Context): Recycl
             contentHolder=view.findViewById<RelativeLayout>(R.id.contentRow)
         }
     }
+}

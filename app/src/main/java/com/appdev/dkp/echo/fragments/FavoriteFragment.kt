@@ -1,11 +1,18 @@
 package com.appdev.dkp.echo.fragments
 
 
+import android.app.Activity
+import android.content.Context
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import android.widget.RelativeLayout
+import android.widget.TextView
 import com.appdev.dkp.echo.R
 import com.appdev.dkp.echo.Songs
 
@@ -29,7 +36,7 @@ class FavoriteFragment : Fragment() {
     var songTitle: TextView?= null
     var recyclerView: RecyclerView?= null
     var trackPosition: Int = 0
-    var favoriteContent: EchoDatabase?= null
+//    var favoriteContent: EchoDatabase?= null
 
     var refreshList: ArrayList<Songs>?= null
     var getListfromDatabase: ArrayList<Songs>?= null

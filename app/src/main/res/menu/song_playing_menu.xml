@@ -1,7 +1,8 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:id="@+id/action_redirect"
-        android:icon="@drawable/redirect_icon"
+        android:icon="@drawable/echo"
         android:title="Back to list"
         app:showAsAction="always"/>
 
